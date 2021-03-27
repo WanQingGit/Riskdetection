@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="qing.risk.detection.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="12dp">
+
+        <TextView android:text="current Thread:" />
+
+        <TextView
+            android:id="@+id/pid"
+            android:text="unknow" />
+
+        <TextView android:text="debuggable:" />
+
+        <TextView
+            android:id="@+id/debuggable"
+            android:text="unknow" />
+
+        <TextView android:text="debuggable flag:" />
+
+        <TextView
+            android:id="@+id/debuggable_flag"
+            android:text="unknow" />
+
+        <TextView android:text="is own app:" />
+
+        <TextView
+            android:id="@+id/is_own"
+            android:text="unknow" />
+
+        <TextView android:text="ida port 23946:" />
+
+        <TextView
+            android:id="@+id/ida_port"
+            android:text="unknow" />
+
+        <TextView android:text="sign:" />
+
+        <TextView
+            android:id="@+id/sign"
+            android:text="unknow" />
+
+        <TextView android:text="traceId:" />
+
+        <TextView
+            android:id="@+id/tid"
+            android:text="unknow" />
+
+        <TextView android:text="attach self:" />
+
+        <TextView
+            android:id="@+id/attach_self"
+            android:text="unknow" />
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Encrypt String" />
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="refresh"
+            android:text="刷新" />
+
+        <Button
+            android:onClick="traceSelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="attach self" />
+
+        <Button
+            android:id="@+id/checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="check all" />
+
+    </GridLayout>
+</LinearLayout>
